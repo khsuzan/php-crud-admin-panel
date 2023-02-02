@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pdf Files Admin Panel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header></header>
+    <main>
+      <div id="noti"></div>
+      <div class="form-container">
+        <form id="form" enctype="multipart/form-data">
+          <input type="file" name="file" id="file_input" accept=".pdf" />
+          <input
+            placeholder="Pdf Name"
+            type="text"
+            name="name"
+            id="name_input"
+          />
+          <button type="submit" id="submit_btn">Submit</button>
+        </form>
+      </div>
+      <div>
+        <ul id="pdf-list"></ul>
+      </div>
+    </main>
+    <footer></footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
